@@ -1,0 +1,274 @@
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #180A0A;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: yellow;
+  text-shadow: 3px 3px 7px yellow;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidebar .closebtn:hover {
+  color: red;
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  border: none;
+  margin-right: 30px;
+
+}
+
+.openbtn:hover {
+  background-color: black;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.divMain {
+  background-color: black;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.eduardImg:hover {
+  background-color: #180A0A;
+  color: green;
+
+}
+
+.eduardImg {
+  text-align: center;
+  color: white
+}
+
+.myImg {
+  border-radius: 12%;
+}
+
+.myImg:hover {
+  border-radius: 50%;
+}
+
+.imgHobby {
+  border-radius: 10%;
+}
+
+.imgHobby:hover {
+  border-radius: 30%;
+}
+
+.divHobbies {
+  background-color: #FFD93D;
+  align-content: center;
+  box-shadow: 3px 3px 5px black;
+  border-radius: 2%;
+}
+
+.divHobbies:hover {
+  background-color: #180A0A;
+  color: yellow;
+}
+
+.pWD {
+  font-family: arial;
+  font-size: 15px;
+}
+
+.divHobbies2 {
+  background-color: #FFD93D;
+  align-content: center;
+  box-shadow: 3px 3px 5px black;
+  border-radius: 2%;
+}
+
+.divHobbies2:hover {
+  background-color: #180A0A;
+  color: yellow;
+}
+
+.divHobbies3 {
+  background-color: #FFD93D;
+  align-content: center;
+  box-shadow: 3px 3px 5px black;
+  border-radius: 2%;
+}
+
+.divHobbies3:hover {
+  background-color: #180A0A;
+  color: yellow;
+}
+
+.divHobbies4 {
+  background-color: #FFD93D;
+  align-content: center;
+  box-shadow: 3px 3px 5px black;
+  border-radius: 2%;
+}
+
+.divHobbies4:hover {
+  background-color: #180A0A;
+  color: yellow;
+}
+
+.selectorHobbies {
+  background-color: black;
+  color: yellow;
+  padding: 5px;
+  width: 40%;
+  text-align: center;
+}
+
+.divWB {
+  background-color: #000;
+  border-radius: 2%;
+
+}
+
+.imgWBgif {
+  height: 120px;
+}
+
+.btnSubmit {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 20%;
+  border: solid 2px white;
+}
+
+.btnSubmit:hover {
+  background-color: yellow;
+  color: black;
+  border: solid 2px black;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.content-link {
+  text-decoration:none;
+  color:white;
+  font-weight: 800;
+  font-size: large;
+}
+.content-link:hover {
+  color:yellow;
+}
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-google {
+  background: white;
+  color: orangered;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: orangered;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.pFooter {
+  background-color: #FFD93D;
+    color:blue;
+    padding: 10px;
+    font-family: arial;
+}
+.sidebarImg {
+  margin-left:50px;
+  border-radius: 50%;
+}
