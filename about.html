@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <title>My About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+            var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+function btnGREET() {
+            var greeting = "hello im glad to know your name, " ;
+            var x = document.getElementById("txtfld1").value;
+            document.getElementById("mymsg").value = greeting + x + "!!";
+            x = document.getElementById("txtfld1").value = "";
+}
+
+
+</script>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 70%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #180A0A;
+  border-radius: 6%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+body {
+    background-color: black;
+}
+.btnBACK {
+    border: none;
+    background-color: black;
+    color:white;
+    padding: 15px;
+    font-size: 15px;
+}
+.btnBACK:hover {
+    background-color: yellow;
+    color:black;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}.fa:hover {
+    background-color: yellow;
+}
+.pfooter {
+    background-color: #FFD93D;
+    color:blue;
+    padding: 10px;
+    font-family: arial;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 14px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 14px solid black;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  border-right: 14px solid black;
+  border-bottom: 14px solid black;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+.divGreet {
+  background-color: #FFD93D;
+}
+.divGreet:hover {
+  background-color: red;
+  background-image: linear-gradient(red, yellow);
+}
+.greetBTN {
+  background-color: #FFD93D;
+  border: none;
+}
+.greetBTN:hover {
+color:white;
+background-color: orangered;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <br>
+    <a href="index.html"><button class="btnBACK">BACK</button></a>
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+<center><div class="container">
+  <img  src="./image/aboutesd.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Im Eduard!👋</div>
+  </div>
+</div>
+</center>
+<center><h2 style="color:yellow; font-family:arial;">About:</h2>
+<p style="color:white; font-family:consolas;">
+    Hello Im eduard Im IT student! One of my favorite hobby is web development
+    Im studying web development programming language to develop a website If you want to be a web developer you need to need learn basic fundamentals of HTML,CSS and Javascript.
+</p>
+</center>
+<br>
+<center>
+    <a  href="https://www.facebook.com/heyitsme.esd/" class="fa fa-facebook"></a>
+    <a style="margin-left:1%" href="https://www.instagram.com/eduardduenas31/" class="fa fa-instagram"></a>
+    <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act" class="fa fa-google"></a>
+    <a href="https://www.linkedin.com/in/eduard-due%C3%B1as-27b172199/" class="fa fa-linkedin"></a>
+    <a href="#default" class="fa fa-snapchat-ghost"></a>
+</center>
+<br><br>
+<div class="divGreet">
+  <br><br><br>
+  <b style="font-family:arial;">Im eduard</b>!<br>
+  <b style="font-family:arial;">what's your name?</b>
+  <form name="myForm">
+    <input style="background-color:yellow;" type="text" id="txtfld1">
+    <br>
+    <input type="button" value="GREET YOU" class="greetBTN" onclick="btnGREET()">
+    <br><br>
+    <input style="background-color:yellow; color:red; width: 80%; text-align: center;" type="text" id="mymsg" disabled>
+    <br><br><br>
+  </form>
+</div>
+<br>
+<hr style="float:left;" size="6" width="50%" noshade color="white"> <font style="float:left; margin-left:40px; text-shadow: 2px 2px 5px yellow;" face="arial" size="3" color="white">This is the content of my about</font>
+<br><br>
+<center><b><p class="pfooter">Programmed and Developed by: Eduard Dueñas</p></b></center>
+<hr style="float:right;" width="50%;" noshade color="white" size="6"> <font style="float:right; margin-right:40px; text-shadow: 2px 2px 5px yellow;" face="arial" size="3" color="white">Developed by mr.eduard!</font>
+
+
+</body>
+</html>
