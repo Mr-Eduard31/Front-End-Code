@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mainpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body id="myBODY">
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <img id="myImages" class="sidebarImg" width="50" src="./image/mrEduard.jpg" onclick="Executer()">
+        <a href="index.html">Main page</a>
+        <a href="about.html">About</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="#contact">Contact</a>
+     
+      </div>
+      
+      <div class="divMain" id="main">
+        <button class="openbtn" id="myNav" onclick="openNav()">☰</button>
+        </div>
+        <br>
+        <div class="eduardImg">
+        <br><br><br>
+        <div class="tooltip"><img id="ttImg" class="myImg" width="200" src="./image/mrEduard.jpg" onclick="myExecuter()" />
+            <span class="tooltiptext">Im Eduard Dueñas👋</span>
+          </div>
+        <br><br><br>
+        <h2 style="font-family: arial; color:yellow;">About:</h2>
+        <p style="font-family: arial;">Hello Im Eduard!👋 This is my personal website I'm a Web Developer.<br>
+        Explore the interface of my website I created this website for the classification of Front-End Development.</p>
+        <br>
+        <hr size="6" noshade color="white">
+        <br>
+        <h2 style="font-family: arial; color:yellow;">My Hobbies:</h2>
+        <b style="color:yellow;">Overview:</b> <select class="selectorHobbies" id="mySelectors" onchange="myOptions()">
+            <option value="">None</option>
+            <option value="Web Development is my hobby and my passion when I was college.">Web Development</option>
+            <option value="Everyday I listen to the music because music is my stress reliever.">Listening To Music</option>
+            <option value="Sometimes I watch a movies if I have a free time especially when midnights.">Watching Movies</option>
+            <option value="Sometimes I read a books my favorite classification of books programming or love story books.">Reading Books</option>
+        </select>
+        <center><p id="demo"></p></center>
+        <br><br><br>
+        <center><div class="divHobbies">
+            <br><br>
+            <img class="imgHobby" width="250" src="./image/codings.jpg">
+            <b><p class="pWD">Web Development</p></b>
+
+            <br><br>
+        </div></center>
+        <br><br>
+        <center><div class="divHobbies2">
+            <br><br>
+            <img class="imgHobby" width="250" src="./image/listenmusic.jpg">
+            <b><p class="pWD">Listening To Music</p></b>
+
+            <br><br>
+        </div></center>
+        <br><br>
+        <center><div class="divHobbies3">
+            <br><br>
+            <img class="imgHobby" width="250" src="./image/netflix.jpg">
+            <b><p class="pWD">Watching Movies</p></b>
+
+            <br><br>
+        </div></center>
+        <br><br>
+        <center><div class="divHobbies4">
+            <br><br>
+            <img class="imgHobby" width="250" src="./image/reading.jpg">
+            <b><p class="pWD">Reading Books</p></b>
+
+            <br><br>
+        </div></center>
+        <br><br>
+        <hr size="6" noshade color="white">
+        <br><br>
+        <center>
+            <div class="divWB">
+                <br><br><br>
+                <h2 style="font-family:arial; color:yellow;">What is Web Development?</h2>
+                <br>
+                <img class="imgWBgif" width="250" src="./image/gifWB.webp">
+                <p style="font-family:consolas;">
+                    Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.
+                <br>
+                    <b><a style="color:yellow;" href="#readmore" onclick="linkread()">readmore..</a></b>
+                    <p id="pRM" style="font-family:consolas;"></p>
+                </p>
+                <br><br>
+                 <h2 style="color:yellow;">Feedbacks:</h2>
+                 <form action="index.html">
+                    <textarea id="w3review" name="w3review" rows="7" cols="40" required></textarea>
+                    <br>
+                    <input class="btnSubmit" type="submit" value="Submit">
+                  </form>
+                <br><br><br>
+            </div>
+        </center>
+        <br><br>
+        <hr size="6" noshade color="white">
+        <h2 style="font-family: arial; color:yellow;">Website Content:</h2>
+        <a class="content-link" href="#default">Web Development</a>
+        <br> <br>
+        <a class="content-link" href="#default">Front End Development</a>
+        <br> <br>
+        <a class="content-link" href="#default">Web Tech</a>
+        <br> <br>
+        <a class="content-link" href="#default">Web Styling</a>
+        <br> <br>
+        <a class="content-link" href="#default">Web Functions</a>
+        <br><br>
+        <hr size="6" noshade color="white">
+        <br><br>
+        <b><p style="color:yellow; font-family:arial;">Follow Eduard Dueñas!</p></b>
+        <a href="https://www.facebook.com/heyitsme.esd/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/eduardduenas31/" class="fa fa-instagram"></a>
+        <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/in/eduard-due%C3%B1as-27b172199/" class="fa fa-linkedin"></a>
+        <a href="#default" class="fa fa-snapchat-ghost"></a>
+        <br><br><br>
+        <hr style="float:left;" size="6" width="50%" noshade color="white"> <font style="float:left; margin-left:40px; text-shadow: 2px 2px 5px yellow;" face="arial" size="3" color="white">This is the content of my webpage</font>
+        <br><br>
+        <center><b><p class="pFooter">Programmed and Developed by: Eduard Dueñas</p></b></center>
+        <hr style="float:right;" width="50%;" noshade color="white" size="6"> <font style="float:right; margin-right:40px; text-shadow: 2px 2px 5px yellow;" face="arial" size="3" color="white">Developed by mr.eduard!</font>
+        </div>
+</body>
+</html>
